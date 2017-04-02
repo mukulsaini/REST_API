@@ -1,5 +1,12 @@
 module.exports = function (app, passport) {
 
+
+  app.get('/api/authenticate',
+    passport.authenticate('localapikey', { failureRedirect: '/api/unauthorized', failureFlash: true }),
+    function(req, res) {
+       res.json({ message: "Authenticated" })
+    });
+
   app.post('/api/authenticate',
     passport.authenticate('localapikey', { failureRedirect: '/api/unauthorized', failureFlash: true }),
     function(req, res) {
