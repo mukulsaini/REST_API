@@ -3,7 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "mocha --timeout 10000"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
@@ -13,6 +19,7 @@
     "express": "~4.15.2",
     "express-session": "^1.15.2",
     "jade": "~1.11.0",
+    "jsonfile": "^2.4.0",
     "morgan": "~1.8.1",
     "passport": "^0.3.2",
     "passport-localapikey": "0.0.3",
