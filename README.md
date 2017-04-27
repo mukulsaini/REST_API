@@ -26,13 +26,7 @@ THe app is deployed on [Heroku](https://www.heroku.com/).
 
 ```https://node-restapi.herokuapp.com/api/naturalGas?apikey=asdasjsdgfjkjhg&use=2.4&country=UK```
 
-### CURL Example
-```bash
-$ curl --get -v -d "apikey=asdasjsdgfjkjhg" "https://node-restapi.herokuapp.com/api/electricity?use=2.4&country=UK" 
-```
-```bash
-$ curl --get -v -d "apikey=asdasjsdgfjkjhg" "https://node-restapi.herokuapp.com/api/naturalGas?apikey=asdasjsdgfjkjhg&use=2.4&country=UK" 
-```
+
 
 ### Running the app locally 
  ```bash
@@ -43,7 +37,8 @@ $ curl --get -v -d "apikey=asdasjsdgfjkjhg" "https://node-restapi.herokuapp.com/
  $ npm install 
  ```
  
-```bash $ npm start
+```bash
+$ npm start
 ```
  
 Open this [link](http://localhost:3000/) in the browser
@@ -53,4 +48,10 @@ Open this [link](http://localhost:3000/) in the browser
  ```bash
  $ npm test
  ```
-
+### CURL Example
+```bash
+$ curl --get -v -d "apikey=asdasjsdgfjkjhg" "https://node-restapi.herokuapp.com/api/electricity?use=2.4&country=UK" 
+```
+```bash
+$ curl --get -v -d "apikey=asdasjsdgfjkjhg" "https://node-restapi.herokuapp.com/api/naturalGas?apikey=asdasjsdgfjkjhg&use=2.4&country=UK" 
+```
